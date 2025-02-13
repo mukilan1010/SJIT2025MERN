@@ -1,0 +1,10 @@
+.input{
+    border: 10px solid blue;
+    border-radius: 20px;
+
+}
+
+input[type=number]{
+    border: 1px solid blueviolet;
+    border-radius: 30px;
+}

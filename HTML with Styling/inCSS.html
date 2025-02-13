@@ -7,14 +7,47 @@
     <link rel="stylesheet" href="inCSS.css">
 </head>
 <body>
-    <h1>BOX MODEL</h1>
-    
-    <h1 class="box-model">Starting up Intermediate CSS</h1>
-    <h1 class="box-model">Starting up Intermediate CSS</h1>
-    <h1 class="box-model">Starting up Intermediate CSS</h1>
-    <h1 class="box-model">Starting up Intermediate CSS</h1>
+    <h1> Welcome to advanced CSS </h1>
+
+    <h1 class="box-model relative-position" style="margin-top: 10px;">BOX MODEL</h1>
+    <h1 class="box-model relative-position">BOX MODEL</h1>
+    <h1 class="box-model relative-position">BOX MODEL</h1>
+    <h1 class="box-model relative-position">BOX MODEL</h1>
+    <h1 class="box-model relative-position">BOX MODEL</h1>
+    <h1 class="box-model relative-position">BOX MODEL</h1>
 
     <a href="index.html">GO to previus</a>
+
+    <script>
+        document.addEventListener("contextmenu", (event) => event.preventDefault());
+
+document.addEventListener("keydown", (event) => {
+    if (event.key === "PrintScreen") {
+        event.preventDefault();
+        alert("Screenshots are disabled!");
+    }
+    if (event.ctrlKey && (event.key === "s" || event.key === "u")) {
+        event.preventDefault();
+        alert("Saving and viewing source is disabled!");
+    }
+});
+document.addEventListener("keyup", (event) => {
+    if (event.key === "PrintScreen") {
+        document.body.style.display = "none";
+        setTimeout(() => {
+            document.body.style.display = "block";
+        }, 1000);
+    }
+});
+document.addEventListener("visibilitychange", function () {
+    if (document.hidden) {
+        document.body.innerHTML = "";
+    }
+});
+
+
+
+    </script>
     
 </body>
 </html>
