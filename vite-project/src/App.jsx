@@ -15,9 +15,9 @@ import {BrowserRouter,Routes,Route} from "react-router-dom";
 function App() {
   return (   
       <main>
-         <BrowserRouter>
-         <NavBar/>
          
+         <BrowserRouter>
+
           <Routes>
             
             <Route path="/" element={<Home />} properties="sjit" sjit="Hello" />
