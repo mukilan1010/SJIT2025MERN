@@ -11,7 +11,7 @@ import Login from './components/functionalcomponents/Login';
 import NavBar from './components/functionalcomponents/NavBar';
 import Signup from './components/functionalcomponents/Signup';
 import UseEffect from './components/functionalcomponents/UseEffect';
-import UseEffectApi from './components/functionalcomponents/useEffectApi';
+import UseEffectApi from './components/functionalcomponents/useEffectAPI';
 import UseRef from './components/functionalcomponents/UseRef';
 import UseMemo from './components/functionalcomponents/UseMemo';
 
