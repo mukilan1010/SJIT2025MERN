@@ -42,4 +42,4 @@ function App() {
       </main>
   )
 }
-export default App
+export default App;
