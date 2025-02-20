@@ -10,6 +10,9 @@ function About(){
     function handleIncrement(){
         setNum(num+1)
     }
+    function Zero(){
+      setNum(0);
+    }
 
   return (
     <div>
@@ -19,7 +22,7 @@ function About(){
       <button onClick={handleDecrement}>-</button>
       <h3>Updating State: {num}</h3>
       <button onClick={handleIncrement}>+</button>
-    
+      <button onDoubleClick={Zero}>Reset</button>
     </div>
   );
 }

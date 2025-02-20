@@ -7,10 +7,11 @@ import About from './components/functionalcomponents/about';
 import Contact from './components/functionalcomponents/contact';
 import Gallery from './components/functionalcomponents/gallery';
 import Home from './components/functionalcomponents/home';
-import Login from './components/functionalcomponents/login';
+import Login from './components/functionalcomponents/Login';
 import NavBar from './components/functionalcomponents/navbar';
 import Signup from './components/functionalcomponents/signup';
 import UseEffect from './components/functionalcomponents/UseEffect';
+import useEffectApi from './components/functionalcomponents/useEffectApi';
 
 import {BrowserRouter,Routes,Route} from "react-router-dom";
 function App() {
@@ -27,6 +28,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/navbar" element={<NavBar />} />
             <Route path="/signup" element={<Signup />} />
+            <Route path="/useeffectapi" element={<useEffectApi />} />
 
           </Routes>
           </BrowserRouter>
