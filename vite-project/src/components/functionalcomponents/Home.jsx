@@ -9,7 +9,7 @@ function Home(properties){
     var a=10;
     return (
         <main>
-            <NavBar/>
+            
         <div>
             <h1 style={styling}>home page</h1>
             <h2>i am going to pass props in the next tag</h2>
