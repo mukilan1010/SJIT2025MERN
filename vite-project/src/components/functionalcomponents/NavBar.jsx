@@ -25,12 +25,22 @@ const NavBar = () => {
             <li className="dropdown-item">
               <Link to="/useeffect">UseEffect</Link>
             </li>
+            <li className="dropdown-item">
+              <Link to="/useeffectapi">UseEffectAPI</Link>
+            </li>
+            <li className="dropdown-item">
+              <Link to="/useref">UseRef</Link>
+            </li>
+            <li className="dropdown-item">
+              <Link to="/usememo">UseMemo</Link>
+            </li>
           </ol>
         )}
       </div>
         <li><Link to="/contact">Contact</Link></li>
         <li><Link to="/login">Login</Link></li>
         <li><Link to="/signup">SignUp</Link></li>
+        
 
       </nav>
     </header>

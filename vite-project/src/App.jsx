@@ -11,7 +11,10 @@ import Login from './components/functionalcomponents/Login';
 import NavBar from './components/functionalcomponents/navbar';
 import Signup from './components/functionalcomponents/signup';
 import UseEffect from './components/functionalcomponents/UseEffect';
-import useEffectApi from './components/functionalcomponents/useEffectApi';
+import UseEffectApi from './components/functionalcomponents/useEffectApi';
+import UseRef from './components/functionalcomponents/UseRef';
+import UseMemo from './components/functionalcomponents/UseMemo';
+
 
 import {BrowserRouter,Routes,Route} from "react-router-dom";
 function App() {
@@ -28,7 +31,9 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/navbar" element={<NavBar />} />
             <Route path="/signup" element={<Signup />} />
-            <Route path="/useeffectapi" element={<useEffectApi />} />
+            <Route path="/useeffectapi" element={<UseEffectApi />} />
+            <Route path="/useref" element={<UseRef />} />
+            <Route path="/usememo" element={<UseMemo />} />
 
           </Routes>
           </BrowserRouter>
