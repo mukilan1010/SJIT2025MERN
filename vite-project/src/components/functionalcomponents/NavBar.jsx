@@ -34,6 +34,12 @@ const NavBar = () => {
             <li className="dropdown-item">
               <Link to="/usememo">UseMemo</Link>
             </li>
+            <li className="dropdown-item">
+              <Link to="/usecallback">UseCallback</Link>
+            </li>
+            <li className="dropdown-item">
+              <Link to="/usememoize">UseMemoize</Link>
+            </li>
           </ol>
         )}
       </div>

@@ -8,15 +8,18 @@ import Contact from './components/functionalcomponents/Contact';
 import Gallery from './components/functionalcomponents/Gallery';
 import Home from './components/functionalcomponents/Home';
 import Login from './components/functionalcomponents/Login';
-import NavBar from './components/functionalcomponents/NavBar';
+import NavBar from './components/functionalcomponents/navbar';
 import Signup from './components/functionalcomponents/Signup';
 import UseEffect from './components/functionalcomponents/UseEffect';
 import UseEffectApi from './components/functionalcomponents/useEffectAPI';
 import UseRef from './components/functionalcomponents/UseRef';
 import UseMemo from './components/functionalcomponents/UseMemo';
+import UseCallback from './components/functionalcomponents/UseCallback';
+import UseMemoize from './components/functionalcomponents/UseMemoize';
+import Hoc from './components/functionalcomponents/HoC/HoC'
 
 
-import {BrowserRouter,Routes,Route} from "react-router-dom";
+import{BrowserRouter,Routes,Route} from "react-router-dom";
 function App() {
   return (   
       <main>
@@ -34,6 +37,9 @@ function App() {
             <Route path="/useeffectapi" element={<UseEffectApi />} />
             <Route path="/useref" element={<UseRef />} />
             <Route path="/usememo" element={<UseMemo />} />
+            <Route path="/usecallback" element={<UseCallback />} />
+            <Route path="/usememoize" element={<UseMemoize />} />
+            <Route path="/hoc" element={<Hoc/>} />
 
           </Routes>
           </BrowserRouter>
