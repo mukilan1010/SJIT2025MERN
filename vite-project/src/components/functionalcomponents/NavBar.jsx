@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../css/dropdown.css';
 
-
 const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
   
@@ -43,14 +42,12 @@ const NavBar = () => {
           </ol>
         )}
       </div>
+      <li><Link to="/hoc">HoC</Link></li>
         <li><Link to="/contact">Contact</Link></li>
         <li><Link to="/login">Login</Link></li>
         <li><Link to="/signup">SignUp</Link></li>
-        
-
       </nav>
     </header>
-
     );
   };
 
