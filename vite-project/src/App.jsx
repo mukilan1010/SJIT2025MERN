@@ -17,6 +17,8 @@ import UseMemo from './components/functionalcomponents/UseMemo';
 import UseCallback from './components/functionalcomponents/UseCallback';
 import UseMemoize from './components/functionalcomponents/UseMemoize';
 import Hoc from './components/functionalcomponents/HoC/HoC'
+import StudentResults from './components/functionalcomponents/ContextAPI/StudentResults';
+import Exam from './components/functionalcomponents/ContextAPI/Exam';
 
 
 import{BrowserRouter,Routes,Route} from "react-router-dom";
@@ -40,6 +42,9 @@ function App() {
             <Route path="/usecallback" element={<UseCallback />} />
             <Route path="/usememoize" element={<UseMemoize />} />
             <Route path="/hoc" element={<Hoc/>} />
+            <Route path="/res" element={<StudentResults sgpa="10 sgpa" cgpa="10 cgpa" />} />
+
+
 
           </Routes>
           </BrowserRouter>

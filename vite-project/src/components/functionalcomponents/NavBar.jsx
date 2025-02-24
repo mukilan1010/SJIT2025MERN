@@ -14,7 +14,7 @@ const NavBar = () => {
             <li><Link to="/gallery">Gallery</Link></li>
       <div className="dropdown-container">
         <span className="dropdown-title" onMouseOver={() => setIsOpen(!isOpen)}>
-          Hooks 
+          Hooks
         </span>
         {isOpen && (
           <ol className="dropdown-list">
@@ -44,6 +44,7 @@ const NavBar = () => {
       </div>
       <li><Link to="/hoc">HoC</Link></li>
         <li><Link to="/contact">Contact</Link></li>
+        <li><Link to="/res">Propsdrilling</Link></li>
         <li><Link to="/login">Login</Link></li>
         <li><Link to="/signup">SignUp</Link></li>
       </nav>
