@@ -8,7 +8,7 @@ import Contact from './components/functionalcomponents/Contact';
 import Gallery from './components/functionalcomponents/Gallery';
 import Home from './components/functionalcomponents/Home';
 import Login from './components/functionalcomponents/Login';
-import NavBar from './components/functionalcomponents/navbar';
+import NavBar from './components/functionalcomponents/NavBar';
 import Signup from './components/functionalcomponents/Signup';
 import UseEffect from './components/functionalcomponents/UseEffect';
 import UseEffectApi from './components/functionalcomponents/useEffectAPI';
