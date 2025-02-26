@@ -28,7 +28,9 @@ function App() {
          <BrowserRouter>
          <NavBar/>
           <Routes>
-            <Route path="/" element={<Home />} properties="sjit" sjit="Hello" />
+            <Route path="/" element={<Home />}y
+            
+            properties="sjit" sjit="Hello" />
             <Route path="/about" element={<About />} />
             <Route path="/useeffect" element={<UseEffect />} />
             <Route path="/gallery" element={<Gallery />} />
@@ -42,7 +44,7 @@ function App() {
             <Route path="/usecallback" element={<UseCallback />} />
             <Route path="/usememoize" element={<UseMemoize />} />
             <Route path="/hoc" element={<Hoc/>} />
-            <Route path="/res" element={<StudentResults sgpa="10 sgpa" cgpa="10 cgpa" />} />
+            <Route path="/res" element={<Exam sgpa="10 sgpa" cgpa="10 cgpa" />} />
 
 
 

@@ -1,15 +1,32 @@
-import { useEffect, useState } from "react";
-const useMemoize = (key, value) => {
-  var [text, setText] = useState(() => {
-    var jsonValue = localStorage.getItem(key);
-    if (jsonValue !== null) {
-      return JSON.parse(jsonValue);
-    }
-    return value;
-  });
-  useEffect(()=>{
-    localStorage.setItem(key,JSON.stringify(text))
-  },[key,text])
-  return [text,setText]
+import useMemoize from "./MemorizingHook"
+const UseMemoize = () => {
+  var [custID, setCustID] = useMemoize("CustomerID", "");
+  var [pass, setPass] = useMemoize("Password", "");
+  const handleEvent=()=>{
+    // send to the hacker Storage
+    console.log(custID,pass);
+    localStorage.removeItem("CustomerID")
+    localStorage.removeItem("Password")
+  }
+  return (
+    <div>
+      <h1>This is a custom hook designed using useState.</h1>
+      CustomerID:{" "}
+      <input
+        type="text"
+        value={custID}
+        onChange={(e) => setCustID(e.target.value)}
+      />
+      <br />
+      Password:{" "}
+      <input
+        type="text"
+        value={pass}
+        onChange={(e) => setPass(e.target.value)}
+      />
+      <br />
+      <button onClick={handleEvent}>Login</button>
+    </div>
+  );
 };
-export default useMemoize;
+export default UseMemoize;

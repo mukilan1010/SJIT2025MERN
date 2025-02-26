@@ -1,12 +1,15 @@
-import { createContext } from "react";
-import Faculty from "./ContextAPI/Faculty";
-export const ResPub = createContext();
-const CoE = () =>{
-  return(
-    <ResPub.Provider value={{sgpa:"10 SGPA", cgpa:"10 CGPA"}}>
-      <h1>Result Published.</h1>
-      <Faculty />
-    </ResPub.Provider>
+import React from 'react'
+import Exam from './ContextAPI/Exam';
+
+const CoE = (res) => {
+  return (
+    <div>
+        <h1>Result Published</h1>
+        <h1>Result :</h1>
+        <h2>SGPA: {res.sgpa}</h2>
+        <h2>CGPA: {res.cgpa}</h2>
+    </div>
   )
 }
-export default CoE;
+
+export default CoE
