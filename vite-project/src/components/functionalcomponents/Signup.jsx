@@ -8,9 +8,9 @@ const Signup = () => {
   const [password,setpass]=useState("");
   const [phoneNumber,setphone]=useState(0);
 
-  const handleSignup=(e)=>{
+  const handleSignup=async(e)=>{
     e.preventDefault()
-    const res=axios.post("https://sjit2025mern-ef5v.onrender.com/Signup",{
+    const res= await axios.post("https://sjit2025mern-ef5v.onrender.com/Signup",{
       firstName,lastName,email,password,phoneNumber
     })
     console.log(res);
