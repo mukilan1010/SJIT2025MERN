@@ -10,7 +10,7 @@ const Signup = () => {
 
   const handleSignup=(e)=>{
     e.preventDefault()
-    const res=axios.post("https://sjit2025mern-ef5v.onrender.com/",{
+    const res=axios.post("https://sjit2025mern-ef5v.onrender.com/Signup",{
       firstName,lastName,email,password,phoneNumber
     })
     console.log(res);
