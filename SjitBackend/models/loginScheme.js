@@ -1,11 +1,9 @@
 const mdb=require('mongoose')
+const LoginScheme = mdb.Schema({
 
-const loginScheme = mdb.Schema({
-    firstName:String,
-    lastName:String,
     email:String,
-    password:String,
-    phoneNumber:String
+    password:String
+  
 })
-const login_schema=mdb.model("Login",loginScheme)
-module.exports=login_schema;
+const Login_schema=mdb.model("Login",LoginScheme)
+module.exports=Login_schema;
