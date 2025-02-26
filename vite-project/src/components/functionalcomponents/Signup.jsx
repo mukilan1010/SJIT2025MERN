@@ -10,7 +10,7 @@ const Signup = () => {
 
   const handleSignup=(e)=>{
     e.preventDefault()
-    const res=axios.post("http://localhost:3000/Signup",{
+    const res=axios.post("https://sjit2025mern-ef5v.onrender.com/",{
       firstName,lastName,email,password,phoneNumber
     })
     console.log(res);
