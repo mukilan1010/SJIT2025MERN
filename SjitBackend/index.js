@@ -82,8 +82,8 @@ app.post("/login", async (req, res) => {
   }
 });
 
-app.get("/static", (req, res) => {
-  res.sendFile("D:/SJIT MERN/index.html");
+app.get("/", (req, res) => {
+  res.send("WELCOME");
 });
 
 app.listen(port, () => {
