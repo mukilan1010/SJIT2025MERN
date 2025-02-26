@@ -5,7 +5,6 @@ const cors=require("cors");
 
 const dotenv = require("dotenv");
 const bcrypt = require("bcrypt");
-const Login = require("./models/LoginScheme.js");
 app.use(cors())
 app.use(express.json());
 const Signup = require("./models/SignupScheme.js");
@@ -66,13 +65,7 @@ app.post("/login", async (req, res) => {
         .status(401)
         .json({ message: "Invalid Password", isLogin: false });
     }
-    const newLogin = new Login({
-   
-        email: email,
-        password: password,
-   
-      });
-      newLogin.save();
+ 
   
     console.log("login successfull");
     res.status(200).json({ message: "Login Successful", isLogin: true });
